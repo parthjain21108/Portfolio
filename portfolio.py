@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit-option-menu import option-menu
+from streamlit-option-menu import option_menu
 import requests
 from streamlit_lottie import st_lottie
 
@@ -25,7 +25,7 @@ st.write("Connect with me for starting new ventures together https://www.linkedi
 st.write('---')
 
 with st.container():
-    selected = option-menu(
+    selected = option_menu(
         menu_title = None,
         options =['About Me','Education and Achievements','Goals and Aspiration', 'Contact Page'],
         icons = ['person','book','bar-chart','mailbox'],
