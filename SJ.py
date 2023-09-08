@@ -25,9 +25,9 @@ st.write("Connect with me for starting new ventures together https://www.linkedi
 st.write('---')
 
 with st.container():
-    selected = option_menu(
-        menu_title = None,
-        options =['About Me','Education and Achievements','Goals and Aspiration', 'Contact Page'],
+    selected = st.selectbox(
+    "Select a Section:",
+    ['About Me', 'Education and Achievements', 'Goals and Aspiration', 'Contact Page'],
         icons = ['person','book','bar-chart','mailbox'],
         orientation= 'horizontal'
     )     
