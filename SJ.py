@@ -26,7 +26,7 @@ st.write('---')
 with st.container():
     selected = st.selectbox(
     "Select a Section:",
-    ['About Me :female-technologist:', 'Education and Achievements :reminder_ribbon:', 'Goals and Aspiration :chart_with_upwards_trend:', 'Contact Page :mailbox_with_mail:']
+    ["About Me :female-technologist:", "Education and Achievements :reminder_ribbon:", "Goals and Aspiration :chart_with_upwards_trend:", "Contact Page :mailbox_with_mail:"]
     )     
 if selected == 'About Me':
 
