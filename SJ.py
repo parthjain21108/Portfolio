@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_option_menu as option_menu
 import requests
 from streamlit_lottie import st_lottie
 
@@ -27,9 +26,7 @@ st.write('---')
 with st.container():
     selected = st.selectbox(
     "Select a Section:",
-    ['About Me', 'Education and Achievements', 'Goals and Aspiration', 'Contact Page'],
-        icons = ['person','book','bar-chart','mailbox'],
-        orientation= 'horizontal'
+    ['About Me', 'Education and Achievements', 'Goals and Aspiration', 'Contact Page']
     )     
 if selected == 'About Me':
 
