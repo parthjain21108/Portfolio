@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 import requests
 from streamlit_lottie import st_lottie
 
@@ -16,7 +17,7 @@ lottie_coder3 = load_lottieurl("https://lottie.host/6b69c3fe-e094-435a-8b5d-affd
 lottie_coder4 = load_lottieurl("https://lottie.host/e991dae4-ad0a-41ad-8a31-942d07f75f80/DZoHPPfOCH.json")
                                
 st.write("##")
-st.subheader("Hey Guys this is Stuti Jain:wave:")
+st.subheader("Hey Guys this is Stuti Jain :wave:")
 st.title("Welcome to my digital portfolio to uncover my skills, achievements, and potential contributions to your organization.")
 st.write("""Feel free to explore my portfolio to witness my dedication to the world of finance and connect with me for exciting job opportunities or to collaborate and expand our knowledge together :smile:
 """)
@@ -24,11 +25,12 @@ st.write("Connect with me for starting new ventures together https://www.linkedi
 st.write('---')
 
 with st.container():
-   selected = st.selectbox(
-    "Select a Section:",
-    ['About Me', 'Education and Achievements', 'Goals and Aspiration', 'Contact Page']
-)
-
+    selected = option_menu(
+        menu_title = None,
+        options =['About Me','Education and Achievements','Goals and Aspiration', 'Contact Page'],
+        icons = ['person','book','bar-chart','mailbox'],
+        orientation= 'horizontal'
+    )     
 if selected == 'About Me':
 
     with st.container():
