@@ -24,10 +24,11 @@ st.write("Connect with me for starting new ventures together https://www.linkedi
 st.write('---')
 
 with st.container():
-    selected = st.selectbox(
+   selected = st.selectbox(
     "Select a Section:",
-    ['About Me', 'Education and Achievements', 'Goals and Aspirations', 'Contact Page']
-    )     
+    ['About Me', 'Education and Achievements', 'Goals and Aspiration', 'Contact Page']
+)
+
 if selected == 'About Me':
 
     with st.container():
